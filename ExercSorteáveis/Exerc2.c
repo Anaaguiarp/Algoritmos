@@ -9,20 +9,18 @@
 
 int main()
 {
-    int idadeAnos, idadeMeses, idadeDias, resultado, euvomemata;
+    int idadeDias, dias, meses, anos;
     
-    printf("Digite quantos anos voce ja viveu nessa terra de meu deus \n");
-    scanf("%d", &idadeAnos);
-    printf("E os meses, Fala pa nois \n");
-    scanf("%d", &idadeMeses);
-    printf("e agora os dias bb \n");
-    scanf("%d", &idadeDias);
+    printf("Digite quantos anos voce já viveu \n");
+    scanf("%d", &anos);
+    printf("Agora informe os meses extras \n");
+    scanf("%d", &meses);
+    printf("Por fim, informe os dias extras \n");
+    scanf("%d", &dias);
     
-    euvomemata  = idadeAnos * 12;
-    resultado = idadeAnos * 365 + (idadeMeses * 30) + idadeDias;
+    idadeDias = meses * 30 + dias + (anos * 365);
     
-    printf("O resultado eh %d \n", resultado);
-    printf("nao gostei, melhore");
+    printf("O resultado eh %d \n", idadeDias);
     
     return 0;
 }
