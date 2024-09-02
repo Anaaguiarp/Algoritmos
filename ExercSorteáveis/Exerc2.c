@@ -10,17 +10,17 @@
 int main()
 {
     int idadeDias, dias, meses, anos;
-    
-    printf("Digite quantos anos voce já viveu \n");
+
+    printf("Digite quantos anos voce ja viveu \n");
     scanf("%d", &anos);
     printf("Agora informe os meses extras \n");
     scanf("%d", &meses);
     printf("Por fim, informe os dias extras \n");
     scanf("%d", &dias);
-    
+
     idadeDias = meses * 30 + dias + (anos * 365);
-    
-    printf("O resultado eh %d \n", idadeDias);
-    
+
+    printf("Ate hoje, voce viveu por %d dias \n", idadeDias);
+
     return 0;
 }
